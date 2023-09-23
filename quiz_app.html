@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz_app.css">
+    <title>Quiz App</title>
+    <link rel="icon" type="image/x-icon"  href="images/favicon.ico">
+</head>
+<body>
+    <div class="alert">Alert</div>
+
+    <div class="form-container">
+
+        <h1 style="color: #0f3b71c7">Quiz Registration</h1>
+        <form id="quizForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter Your Name Here..."><br>
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email Id..." required><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter Your Mobile No..." required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter a Strong Password..." required><br>
+
+            <label for="profession">Profession:</label>
+            <select id="profession" name="profession">
+                <option value="student">Student</option>
+                <option value="developer">Developer</option>
+                <option value="teacher">Teacher</option>
+                <option value="engineer">Engineer</option>
+                <option value="other">Other</option>
+            </select><br>
+
+            <label for="quizType">Type of Quiz:</label>
+            <select id="quizType" name="quizType">
+                <option value="general">Programming</option>
+                <option value="math">Mathematics</option>
+                <option value="science">Science</option>
+                <option value="programming">General Knowledge</option>
+                <option value="other">Other</option>
+            </select><br>
+
+            <button id="start-quiz" style="text-align: center; display: flex;justify-content: center;align-items: center;"  class="btn startBtn" class="your-button-class">Start  Quiz</button>
+        </form>
+    </div>
+
+     <!-- <div class="btn startBtn">Start
+         -->
+     </div>
+
+
+ <div class="container">
+   
+        <h1>Let's play a Quiz Game</h1>
+        <div class="question"></div>
+        <div class="choices"></div>
+        <button class="btn nextBtn">Next</button>
+        <div class="scoreCard"></div>
+        <div class="timer"></div>
+    
+    </div>
+
+
+    <script src="quiz_app.js"></script>
+</body>
+</html>
